@@ -55,6 +55,6 @@ configure_file(MANIFEST.in.in ${CMAKE_SOURCE_DIR}/MANIFEST.in @ONLY)
 #    VERBATIM )
 
 add_custom_target(install ALL
-    COMMAND ${Python_EXECUTABLE} -m pip install ${CMAKE_SOURCE_DIR}
+    COMMAND ${Python_EXECUTABLE} -m pip install -U ${CMAKE_SOURCE_DIR}
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     VERBATIM )
